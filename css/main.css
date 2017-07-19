@@ -101,7 +101,8 @@ body {
     background-color: #fff;
 }
 
-body {
+body,
+.head {
     color: #404040;
 }
 
@@ -110,20 +111,38 @@ body {
     margin: 0 auto;
 }
 
+.head {
+    font-size: 90px;
+    margin: 0;
+    margin-bottom: -15px;
+}
+
 .navbar .navbar-nav li a,
 .navbar .navbar-nav li a:hover,
 .navbar .navbar-nav li a:focus {
     color: #fff;
 }
 
-.navbar .navbar-nav li a {
+.navbar .navbar-nav li a,
+.head {
     text-transform: uppercase;
 }
+
+
+
+
+/*   Nav   */
+
 
 
 .navbar {
     background-color: #404040;
     min-height: 135px;
+    margin-bottom: 0;
+}
+
+.navbar-default {
+    border-color: #404040;
 }
 
 .navbar .navbar-nav {
@@ -167,6 +186,48 @@ body {
 
 
 
+/*    Main   */
+
+
+.main {
+    height: 810px;
+}
+
+.main .left_part, .main .right_part {
+    width: 50%;
+    height: 810px;
+}
+
+.main .left_part {
+    background: url("../img/contact_back.jpg")  ;
+    float: left;
+}
+
+.main .right_part {
+    background-color: #fff;
+    float: right;
+    padding-top: 110px;
+    padding-left: 60px;
+}
+
+.intro_text {
+    max-width: 515px;
+    padding-right: 15px;
+}
+
+.first_p {
+    padding-top: 56px;
+}
+
+.second_p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+
+
+/*   Maps   */
 
 
 
@@ -181,7 +242,27 @@ body {
 }
 
 @media (max-width: 992px) {
-
+    .main .left_part {
+        display: none;
+    }
+    .head {
+        font-size: 60px;
+    }
+    .main {
+        height: auto;
+    }
+    .main .right_part {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        height: auto;
+    }
+    .main .intro_text {
+        max-width: 100%;
+        padding-top: 60px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 }
 
 @media (max-width: 906px) {
@@ -205,6 +286,13 @@ body {
     }
 
 }
+
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0;
+    }
+}
+
 
 
 
