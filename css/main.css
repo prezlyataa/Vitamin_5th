@@ -91,9 +91,15 @@ textarea {
     padding: 0.2em 0;
 }
 
+
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+
+
 
 body {
     font-size: 19px;
@@ -124,7 +130,9 @@ body,
 }
 
 .navbar .navbar-nav li a,
-.head {
+.head,
+.phones h3, .mails h3,
+.footer {
     text-transform: uppercase;
 }
 
@@ -132,6 +140,7 @@ body,
 
 
 /*   Nav   */
+
 
 
 
@@ -186,7 +195,9 @@ body,
 
 
 
+
 /*    Main   */
+
 
 
 .main {
@@ -227,12 +238,114 @@ body,
 
 
 
-/*   Maps   */
+/*   Contact   */
+
+
+
+.contact .head {
+    font-size: 50px;
+}
+
+.contact .right_part, .contact .left_part {
+    width: 50%;
+}
+
+.contact .left_part {
+    float: left;
+    background-color: #f1d53a;
+}
+
+.contact .right_part {
+    float: right;
+    background-color: #fff;
+}
+
+.contact_form, .contact_address {
+    width: 500px;
+    padding-top: 100px;
+}
+
+.contact .contact_form {
+    float: right;
+    padding-right: 60px;
+}
+
+.contact .contact_address {
+    padding-left: 60px;
+}
+
+.form {
+    padding-top: 100px;
+    padding-bottom: 160px;
+}
+
+.form input {
+    width: 360px;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 7px;
+}
+
+.form_btn {
+    padding: 15px 45px;
+    text-transform: uppercase;
+    color: #404040;
+    background-color: #f1d53a;
+    border-color: #404040;
+    margin-top: 40px;
+}
+
+.info {
+    padding-top: 40px;
+}
+
+.info h3 {
+    font-size: 16px;
+}
+
+.info p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.phones, .mails {
+    width: 200px;
+}
+
+.phones {
+    float: left;
+}
+
+.mails {
+    float: right;
+}
+
+
+
+
+/*   Footer   */
+
+
+
+.footer {
+    background-color: #404040;
+    color: #d7d7d7;
+    font-family: "Myriad Pro", sans-serif;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
 
 
 
 
 /*   Media squares   */
+
+
 
 @media (max-width: 1010px) {
     .navbar .navbar-nav li,
@@ -245,7 +358,7 @@ body,
     .main .left_part {
         display: none;
     }
-    .head {
+    .main .head {
         font-size: 60px;
     }
     .main {
@@ -262,6 +375,29 @@ body,
         padding-top: 60px;
         padding-right: 15px;
         padding-left: 15px;
+    }
+    .contact .left_part, .contact .right_part,
+    .contact .left_part .contact_form, .contact .right_part .contact_address {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .contact .head {
+        padding-top: 30px;
+    }
+    .form {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+    .form input {
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 7px;
+    }
+    .info {
+        padding-bottom: 25px;
     }
 }
 
@@ -284,6 +420,9 @@ body,
     .navbar .navbar-nav {
         padding-top: 0;
     }
+    .phones, .mails {
+        width: 160px;
+    }
 
 }
 
@@ -292,6 +431,7 @@ body,
         border-radius: 0;
     }
 }
+
 
 
 
